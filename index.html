@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + TS</title>
+</head>
+
+<body>
+  <div id='input-wrapper' class="w-screen h-screen flex flex-col justify-center items-center">
+    <h1 class="font-bold text-lg">Study with Amna</h1>
+    <p>Slides Generator</p>
+    <textarea name="input" id="input" class="code text-xs bg-neutral-200 my-8 text-black p-1 text-lg"></textarea>
+    <button id='generate-btn' class="p-2 bg-black text-white rounded-full">Generate</button>
+  </div>
+  <div id='main'
+    class="h-auto relative w-screen p-4 bg-gradient-to-r from-blue-100 to-pink-100 flex flex-col items-center justify-center aspect-[16/9] hidden">
+    <h1 id='title' class="absolute top-4 text-xl font-bold text-center"> Understanding the Shoulder Joint </h1>
+    <div class="prose" id='content'>
+      <p>The shoulder joint is considered a complex joint.</p>
+      <p>It involves multiple joints, each contributing to the range of motion (ROM).</p>
+      <p>It is crucial for linking the upper extremity to the axial skeleton and facilitating a wide range of movements.
+      </p>
+    </div>
+    <p class="whitespace-nowrap absolute bottom-4 right-4 opacity-50 text-xs font-bold">Study with Amna</p>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
